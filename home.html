@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    /* Add your own custom styles here */
+    
+    /* Header */
+    header {
+      padding: 20px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #f8f8f8;
+      padding: 50px 0;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    /* Categories */
+    .categories {
+      padding: 50px 0;
+      background-color: #ebebeb;
+    }
+
+    .categories h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Special Offers */
+    .special-offers {
+      padding: 50px 0;
+      background-color: #f5f5f5;
+    }
+
+    .special-offers h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 16px;
+    }
+
+    /* Testimonials/Reviews */
+    .testimonials {
+      background-color: #ebebeb;
+      padding: 50px 0;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .testimonials p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Featured Brands */
+    .featured-brands {
+      padding: 50px 0;
+    }
+
+    .featured-brands h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .featured-brands img {
+      width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f5f5f5;
+      padding: 30px 0;
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .social-media li {
+      margin-left: 10px;
+    }
+
+    .social-media li a {
+      color: #333;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Create Account</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Featured Products</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="col-md-6">
+          <img src="path_to_image" alt="Featured Products Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Category 1</h3>
+        </div>
+        <div class="col-md-3">
+          <h3>Category 2</h3>
+        </div>
+        <div class="col-md-3">
+          <h3>Category 3</h3>
+        </div>
+        <div class="col-md-3">
+          <h3>Category 4</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL OFFERS -->
+  <section class="special-offers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="path_to_image" alt="Promotional Banner">
+        </div>
+        <div class="col-md-6">
+          <h2>Special Offers</h2>
+          <div class="product-list">
+            <div class="product">
+              <img src="path_to_image" alt="Discounted Product 1">
+              <h4>Discounted Product 1</h4>
+              <p>$XX.XX</p>
+            </div>
+            <div class="product">
+              <img src="path_to_image" alt="Discounted Product 2">
+              <h4>Discounted Product 2</h4>
+              <p>$XX.XX</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">View All Offers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS/REVIEWS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <p>Customer Testimonial 1</p>
+        </div>
+        <div class="col-md-4">
+          <p>Customer Testimonial 2</p>
+        </div>
+        <div class="col-md-4">
+          <p>Customer Testimonial 3</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED BRANDS -->
+  <section class="featured-brands">
+    <div class="container">
+      <h2>Featured Brands</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="path_to_logo" alt="Brand 1">
+        </div>
+        <div class="col-md-3">
+          <img src="path_to_logo" alt="Brand 2">
+        </div>
+        <div class="col-md-3">
+          <img src="path_to_logo" alt="Brand 3">
+        </div>
+        <div class="col-md-3">
+          <img src="path_to_logo" alt="Brand 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="social-media">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Custom CSS */
+    /* Add your own custom styles here */
+    
+    /* Header */
+    header {
+      padding: 20px 0;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #f8f8f8;
+      padding: 50px 0;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    /* Categories */
+    .categories {
+      padding: 50px 0;
+      background-color: #ebebeb;
+    }
+
+    .categories h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Special Offers */
+    .special-offers {
+      padding: 50px 0;
+      background-color: #f5f5f5;
+    }
+
+    .special-offers h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 16px;
+    }
+
+    /* Testimonials/Reviews */
+    .testimonials {
+      background-color: #ebebeb;
+      padding: 50px 0;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .testimonials p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Featured Brands */
+    .featured-brands {
+      padding: 50px 0;
+    }
+
+    .featured-brands h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .featured-brands img {
+      width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f5f5f5;
+      padding: 30px 0;
+    }
+
+    footer ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .social-media li {
+      margin-left: 10px;
+    }
+
+    .social-media li a {
+      color: #333;
+      font-size: 24px;
+    }
+  </style>
+</body>
+</html>
